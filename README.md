@@ -97,7 +97,7 @@ imc -load cov_work/scope/test/ &
 ```
 
 ## I3C interface waveform 
-![MicrosoftTeams-image](https://github.com/mbits-mirafra/i3c_avip/assets/15922511/918f58a5-4611-4cbd-b05f-23a69e625f81)
+![MicrosoftTeams-image (2)](https://github.com/mbits-mirafra/i3c_avip/assets/15922511/871de625-dcdf-42f8-9ec6-c2dd19b3619b)
 
 
 ## Technical Document 
