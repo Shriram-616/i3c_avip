@@ -95,6 +95,11 @@ ex: make regression testlist_name=i3c_standard_mode_regression.list
 # Coverage:   
 imc -load cov_work/scope/test/ &
 ```
+
+## I3C interface waveform 
+![MicrosoftTeams-image](https://github.com/mbits-mirafra/i3c_avip/assets/15922511/918f58a5-4611-4cbd-b05f-23a69e625f81)
+
+
 ## Technical Document 
 https://docs.google.com/document/d/1UH9p83ARZM5K0v1wrA2lv7KpHbaGHC3u/
 
