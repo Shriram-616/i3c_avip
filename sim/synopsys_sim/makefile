@@ -65,11 +65,13 @@ all:
 # For Assertions use +acc options
 #  +cover=becstf
 
-VCS_CMD_RAND = vcs -full64 -sverilog +v2k -debug_access+all -ntb_opts uvm-1.2 -debug_pp +ntb_random_seed_automatic -override_timescale=1ns/1ps 
+VCS_CMD_RAND = vcs -full64 -sverilog +v2k -debug_access+all -debug_acc+pp+dmptf -ntb_opts uvm-1.2 +ntb_random_seed_automatic +memcbk +vcs+fsdbon+all -override_timescale=1ns/1ps 
+
  
 compile:
 	${VCS_CMD_RAND} \
 	-l i3c_compile.log \
+	+plusarg_ignore \
 	-f ../i3c_compile.f 
 
 	# -s means silent mode
@@ -154,6 +156,7 @@ simulate_war_err:
 	echo "";
 	echo "Log file path: $(test_folder)/$(test).log"
 	echo "";
+	echo "Waveform: verdi -ssf novas.fsdb"
 	echo "-----------------------------------------------------------------";
 	echo "-----------------------------------------------------------------";
 	echo "";
