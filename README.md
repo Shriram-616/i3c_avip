@@ -68,6 +68,24 @@ ex: make regression testlist_name=i3c_standard_mode_regression.list
  firefox merged_cov_html_report/index.html &
 
 ```
+### Using Synopsys VCS simulator 
+```
+cd i3c_avip/sim/synopsys_sim
+
+# Compilation:  
+make compile
+
+# Simulation:
+make simulate test=<test_name> uvm_verbosity=<VERBOSITY_LEVEL>
+
+ex: make simulate test=i3c_writeOperationWith16bitsData_test uvm_verbosity=UVM_HIGH
+
+# Wavefrom:  
+
+ex: verdi -ssf novas.fsdb
+
+
+```
 ### Latest regression coverage report link
 
 https://github.com/mbits-mirafra/i3c_avip/issues/33#issuecomment-1933963627
