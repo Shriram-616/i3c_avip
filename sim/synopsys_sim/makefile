@@ -105,7 +105,7 @@ simulate:
 	mkdir $(test_folder)
 
 	# Use -novopt for no optimization - Makes the simulation slower
-	# vsim -pli finesim.so -coverage top
+	urg -report user_report -dir simv.vdb
 	./simv \
 	+UVM_TESTNAME=$(test) \
 	+UVM_VERBOSITY=$(uvm_verbosity) \
@@ -159,4 +159,6 @@ simulate_war_err:
 	echo "Waveform: verdi -ssf novas.fsdb"
 	echo "-----------------------------------------------------------------";
 	echo "-----------------------------------------------------------------";
+	echo "";
+	echo "Coverage: firefox urgReport/grp0.html &"
 	echo "";
